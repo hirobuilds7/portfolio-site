@@ -1,6 +1,6 @@
 // TODO: Replace with your actual CrowdWorks profile URL
 const CROWDWORKS_URL = 'https://crowdworks.jp/public/employees/7030833'
-const EMAIL = 'a1y2e30112@gmail.com'
+const EMAIL = 'hiro.sidehustle@gmail.com'
 
 export default function Contact() {
   return (
