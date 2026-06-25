@@ -6,7 +6,8 @@ interface Project {
   tech: string[]
   features: string[]
   demoUrl: string
-  githubUrl: string
+  demoLabel?: string
+  githubUrl?: string
   imagePath: string
   gradient: string
 }
@@ -33,6 +34,17 @@ const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/hirobuilds7/kanban-app',
     imagePath: '/images/kanban.png',
     gradient: 'from-blue-500 to-indigo-600',
+  },
+  {
+    title: 'ブログ記事AI自動化パイプライン',
+    description:
+      'Claude AIとWordPress REST APIを連携し、記事の下書き作成・画像の自動配置・アイキャッチ設定・予約投稿を4つのコマンドで自動化するCLIツール。毎日実際に稼働しており、このブログの記事制作に使用しています。',
+    tech: ['Node.js', 'Claude AI', 'WordPress REST API', 'ESM', 'FormData'],
+    features: ['下書き自動作成', 'AI画像自動配置', 'アイキャッチ設定', '予約投稿', 'WAF対策済'],
+    demoUrl: 'https://web-fukugyo-hiro.com',
+    demoLabel: 'ブログを見る',
+    imagePath: '/images/decoration-tool.png',
+    gradient: 'from-orange-500 to-amber-600',
   },
   {
     title: '収支管理アプリ',
@@ -96,16 +108,18 @@ function ProjectCard({ project }: { project: Project }) {
             rel="noopener noreferrer"
             className="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium py-2.5 px-4 rounded-xl text-center transition-colors"
           >
-            デモを見る
+            {project.demoLabel ?? 'デモを見る'}
           </a>
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 border border-slate-200 hover:border-slate-400 text-slate-600 hover:text-slate-900 text-sm font-medium py-2.5 px-4 rounded-xl text-center transition-colors"
-          >
-            GitHub
-          </a>
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 border border-slate-200 hover:border-slate-400 text-slate-600 hover:text-slate-900 text-sm font-medium py-2.5 px-4 rounded-xl text-center transition-colors"
+            >
+              GitHub
+            </a>
+          )}
         </div>
       </div>
     </div>
@@ -122,7 +136,7 @@ export default function Works() {
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">制作実績</h2>
           <p className="text-slate-500 max-w-xl mx-auto">
-            実際に動作するWebアプリを3本開発しました。デモリンクからすぐに確認いただけます。
+            実際に動作するWebアプリ・自動化ツールを開発しました。デモリンクからすぐに確認いただけます。
           </p>
         </div>
 
