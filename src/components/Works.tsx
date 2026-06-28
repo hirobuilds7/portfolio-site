@@ -14,6 +14,17 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    title: '売上集計＋月次レポート自動化（業務ツールサンプル）',
+    description:
+      '小売EC事業者向けに、複数チャネル（Amazon/楽天/Shopify）の売上CSVを取り込むだけで、ダッシュボード・前年同月比カード・経営者向け月次サマリ・AI要約・AI改善提案チャットまで自動生成するWebツール。「Excel・スプレッドシートからの卒業」をテーマにした業務改善のサンプル実装です。',
+    tech: ['Next.js 16', 'TypeScript', 'Tailwind v4', 'Claude API', 'Recharts', 'Vercel'],
+    features: ['複数チャネルCSV統合', 'ダッシュボード自動描画', '月次レポート生成', 'AI要約コメント', 'AI改善提案チャット'],
+    demoUrl: 'https://sales-report-app.vercel.app',
+    githubUrl: 'https://github.com/hirobuilds7/sales-report-app',
+    imagePath: '/images/sales-report.png',
+    gradient: 'from-blue-500 to-cyan-600',
+  },
+  {
     title: '家計簿アプリ',
     description:
       '収支の記録・管理ができる本格的な家計簿アプリ。カレンダービューや円グラフ・棒グラフで支出を可視化。予算管理・CSVエクスポート・繰り返し収支など実用的な機能を幅広く実装しました。',
