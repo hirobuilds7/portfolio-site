@@ -8,17 +8,17 @@ const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: 'フロントエンド',
     emoji: '🖥',
-    skills: ['React', 'TypeScript', 'JavaScript (ES2020+)', 'HTML / CSS', 'Tailwind CSS', 'Recharts', 'Chart.js', 'dnd-kit'],
+    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript (ES2020+)', 'HTML / CSS', 'Tailwind CSS', 'Recharts', 'Chart.js', 'dnd-kit'],
   },
   {
     title: 'バックエンド / BaaS',
     emoji: '🗄',
-    skills: ['Firebase Firestore', 'Firebase Auth', 'Supabase (PostgreSQL)', 'Supabase Auth', 'REST API'],
+    skills: ['Firebase Firestore', 'Firebase Auth', 'Supabase (PostgreSQL)', 'Supabase Auth', 'REST API', 'Claude API (Anthropic)'],
   },
   {
     title: 'ツール・環境',
     emoji: '🛠',
-    skills: ['Vite', 'Git / GitHub', 'Netlify', 'PWA', 'VSCode'],
+    skills: ['Vite', 'Git / GitHub', 'Claude Code', 'Vercel', 'Netlify', 'PWA', 'VSCode'],
   },
 ]
 

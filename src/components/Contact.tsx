@@ -13,8 +13,8 @@ export default function Contact() {
           一緒に仕事しませんか？
         </h2>
         <p className="text-slate-400 max-w-xl mx-auto mb-10 leading-relaxed">
-          Webアプリ・LP・管理画面など、お気軽にご相談ください。
-          納期厳守・丁寧なコミュニケーションで対応します。
+          Excel・スプレッドシートの自動化、業務ツールの制作、WordPressの修正など、お気軽にご相談ください。
+          やり取りはテキストで完結し、決定事項がすべて文字で残ります。
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -1,8 +1,7 @@
 const TECH_STACK = [
-  'React', 'TypeScript', 'JavaScript', 'Firebase', 'Supabase', 'Tailwind CSS', 'Vite',
+  'React', 'TypeScript', 'Next.js', 'JavaScript', 'Firebase', 'Supabase', 'Tailwind CSS', 'Claude API',
 ]
 
-// TODO: Replace with your actual CrowdWorks profile URL
 const CROWDWORKS_URL = 'https://crowdworks.jp/public/employees/7030833'
 
 export default function Hero() {
@@ -17,12 +16,12 @@ export default function Hero() {
             Hi, I'm Hiro
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 mb-6 leading-relaxed">
-            React・TypeScript・Firebase・Supabaseを使って、<br className="hidden sm:block" />
-            <span className="text-white font-semibold">使いやすいWebアプリ</span>を丁寧に開発します。
+            元・町工場の現場から、<br className="hidden sm:block" />
+            <span className="text-white font-semibold">AIでWebアプリを作る側</span>へ。
           </p>
           <p className="text-slate-400 mb-10 text-base leading-relaxed max-w-2xl">
-            家計簿・タスク管理・データ可視化など、実用的なWebアプリを複数開発した経験があります。
-            納期厳守・丁寧なコミュニケーションで、クライアントの課題解決に取り組みます。
+            売上集計＋AI月次レポート・家計簿・タスク管理など5本を公開中。すべてURLを開けば、その場で触って確かめられます。
+            やり取りはテキストで完結し、決定事項がすべて文字で残ります。
           </p>
           <div className="flex flex-wrap gap-4 mb-12">
             <a
