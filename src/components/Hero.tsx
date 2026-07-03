@@ -6,13 +6,13 @@ const CROWDWORKS_URL = 'https://crowdworks.jp/public/employees/7030833'
 
 export default function Hero() {
   return (
-    <section className="bg-slate-900 pt-16 min-h-screen flex items-center">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-24">
+    <section className="bg-slate-900 pt-20 flex items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
         <div className="max-w-3xl">
-          <p className="text-indigo-400 text-sm font-medium tracking-widest uppercase mb-6">
+          <p className="text-indigo-400 text-sm font-medium tracking-widest uppercase mb-4">
             Web Application Developer
           </p>
-          <h1 className="text-5xl sm:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-5 leading-tight">
             Hi, I'm Hiro
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 mb-6 leading-relaxed">
