@@ -19,6 +19,7 @@ interface FeaturedProject extends Project {
   commands: { name: string; role: string }[]
   metrics: { label: string; before: string; after: string }[]
   isType2Note: string
+  articles: { title: string; url: string; note: string }[]
 }
 
 const FEATURED: FeaturedProject = {
@@ -47,6 +48,28 @@ const FEATURED: FeaturedProject = {
     { label: '運用実績', before: '—', after: '週2〜3本ペースで自ブログ（web-fukugyo-hiro.com）を継続更新中' },
   ],
   isType2Note: '「作る時だけAI」ではなく「動く時もAIが中で判断する」タイプ2の設計。汎用ジェネレーターでは吸収しきれない現場ごとの判断ロジックを、Claude APIの vision で組み込んでいます。',
+  articles: [
+    {
+      title: '画像生成APIに2,750円ドブに捨てて学んだこと（Gemini/OpenAI）',
+      url: 'https://web-fukugyo-hiro.com/image-api-japanese-fail/',
+      note: 'API版Geminiは日本語サムネで文字化け→ブラウザ版Geminiを自動操作する運用に到達した実装経緯。',
+    },
+    {
+      title: '副業3週目、業務自動化を「Webアプリ」で作ることにした',
+      url: 'https://web-fukugyo-hiro.com/webapp-business-automation/',
+      note: '「AIで作った」ではなく「動作中もAIが中で働く」タイプ2の設計に軸足を移した記録。',
+    },
+    {
+      title: '副業3週目、業務改善Webアプリ サンプル1本目を1日で公開',
+      url: 'https://web-fukugyo-hiro.com/sales-report-app-built-in-a-day/',
+      note: 'sales-report-app（月次レポート自動化）を1日で公開まで持っていった実装の走り書き。',
+    },
+    {
+      title: 'AIで作った副業ツール6選｜未経験から作った"動く"実績まとめ',
+      url: 'https://web-fukugyo-hiro.com/ai-apps-i-built/',
+      note: 'decoration-tool含めて実際に稼働している自作AIツールを1本ずつまとめた総括記事。',
+    },
+  ],
 }
 
 const PROJECTS: Project[] = [
@@ -228,6 +251,32 @@ function FeaturedCard({ project }: { project: FeaturedProject }) {
             <span className="font-semibold text-orange-700">タイプ2（AI組み込み型）</span>：
             {project.isType2Note}
           </p>
+        </div>
+
+        <div className="p-6 sm:p-8 border-t border-orange-100">
+          <h4 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+            <span className="w-1 h-5 bg-orange-500 rounded-full"></span>
+            開発・運用ログ（ブログ記事）
+          </h4>
+          <p className="text-xs text-slate-500 mb-4">
+            このツールをどう作ったか・なぜタイプ2に軸を置いたか、実際の実装記録。
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {project.articles.map((a) => (
+              <a
+                key={a.url}
+                href={a.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 bg-white border border-slate-200 hover:border-orange-300 hover:shadow-md rounded-xl transition-all group"
+              >
+                <p className="text-sm font-semibold text-slate-900 group-hover:text-orange-700 leading-snug mb-1">
+                  {a.title}
+                </p>
+                <p className="text-xs text-slate-500 leading-relaxed">{a.note}</p>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
