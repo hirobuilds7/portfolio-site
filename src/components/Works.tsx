@@ -74,6 +74,17 @@ const FEATURED: FeaturedProject = {
 
 const PROJECTS: Project[] = [
   {
+    title: 'kintone粗利管理アプリ（町工場向け構築記録）',
+    description:
+      '町工場向けに、案件別の粗利がリアルタイムで見えるkintoneアプリを構築。現場が日報を入れるだけで、事務所側では案件を開いた瞬間に原価合計・粗利・粗利率がカードで自動集計されます。粗利マイナスは赤で強調され、追加工が入って赤字になった案件を月末Excel集計より1ヶ月早く気づけます。kintone開発者ライセンスの規約上そのままの公開はできないため、スクショと構築記録で中身を全部見せる形にしました。',
+    tech: ['kintone', 'JavaScript', 'kintone REST API', 'HTML/CSS'],
+    features: ['アプリ2本（案件管理＋日報・原価入力）', '粗利カード自動集計', '赤字案件の赤強調', '月別グラフ', '過去案件検索'],
+    demoUrl: 'https://web-fukugyo-hiro.com/kintone-arari-app/',
+    demoLabel: '構築記録を読む',
+    imagePath: '/images/kintone-arari.png',
+    gradient: 'from-sky-500 to-blue-600',
+  },
+  {
     title: '売上集計＋月次レポート自動化（業務ツールサンプル）',
     description:
       '小売EC事業者向けに、複数チャネル（Amazon/楽天/Shopify）の売上CSVを取り込むだけで、ダッシュボード・前年同月比カード・経営者向け月次サマリ・AI要約・AI改善提案チャットまで自動生成するWebツール。「Excel・スプレッドシートからの卒業」をテーマにした業務改善のサンプル実装です。',
