@@ -9,6 +9,7 @@ interface Project {
   demoLabel?: string
   githubUrl?: string
   imagePath: string
+  videoPath?: string
   gradient: string
 }
 
@@ -82,6 +83,7 @@ const PROJECTS: Project[] = [
     demoUrl: 'https://web-fukugyo-hiro.com/kintone-arari-app/',
     demoLabel: '構築記録を読む',
     imagePath: '/images/kintone-arari.png',
+    videoPath: '/videos/kintone-arari.mp4',
     gradient: 'from-sky-500 to-blue-600',
   },
   {
@@ -299,13 +301,24 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col">
-      <div className="aspect-video overflow-hidden">
+      <div className="aspect-video overflow-hidden bg-slate-900">
         {imgError ? (
           <div
             className={`w-full h-full bg-gradient-to-br ${project.gradient} flex items-center justify-center`}
           >
             <span className="text-white/60 text-sm">{project.title}</span>
           </div>
+        ) : project.videoPath ? (
+          <video
+            src={project.videoPath}
+            poster={project.imagePath}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover object-top"
+            onError={() => setImgError(true)}
+          />
         ) : (
           <img
             src={project.imagePath}
