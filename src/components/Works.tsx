@@ -87,6 +87,17 @@ const PROJECTS: Project[] = [
     gradient: 'from-sky-500 to-blue-600',
   },
   {
+    title: '工程管理アプリ（町工場向けデモ）',
+    description:
+      '町工場の「朝礼のホワイトボード・Excelの割付表」の置き換えを想定した工程管理デモ。今日の工程一覧・遅延の赤アラート・機械別稼働率や作業者別の担当状況をダッシュボードで見える化します。工程詳細から開始・完了・遅延の報告もその場で試せます（データは架空・LocalStorage保存）。',
+    tech: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Recharts', 'Vercel'],
+    features: ['今日の工程・KPI', '遅延アラート', '機械別稼働率グラフ', '作業者別担当状況', '開始/完了/遅延報告', 'CSV取り込み'],
+    demoUrl: 'https://process-manager-demo.vercel.app',
+    githubUrl: 'https://github.com/hirobuilds7/process-manager-demo',
+    imagePath: '/images/process-manager.png',
+    gradient: 'from-slate-500 to-blue-600',
+  },
+  {
     title: '売上集計＋月次レポート自動化（業務ツールサンプル）',
     description:
       '小売EC事業者向けに、複数チャネル（Amazon/楽天/Shopify）の売上CSVを取り込むだけで、ダッシュボード・前年同月比カード・経営者向け月次サマリ・AI要約・AI改善提案チャットまで自動生成するWebツール。「Excel・スプレッドシートからの卒業」をテーマにした業務改善のサンプル実装です。',
