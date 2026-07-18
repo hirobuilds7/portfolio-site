@@ -75,6 +75,28 @@ const FEATURED: FeaturedProject = {
 
 const PROJECTS: Project[] = [
   {
+    title: 'D2C商品販売LP（架空ブランド・制作サンプル）',
+    description:
+      '架空のコーヒー定期便ブランド「サンプル焙煎所」の縦長セールスLP。共感→こだわり→お客様の声→料金プラン→FAQというセールスLPの定石構成を、明朝体×ダークトーンのブランド世界観で実装した制作サンプルです。スマホ追従CTA・キーボード操作対応・JS無効環境でも全文表示される堅牢設計まで作り込んでいます（データはすべて架空）。',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
+    features: ['縦長セールス構成', '明朝×ダークの世界観設計', 'スマホ追従CTA', '料金プラン比較UI', 'アクセシビリティ100点(Lighthouse)'],
+    demoUrl: 'https://lp-coffee-sample.vercel.app',
+    githubUrl: 'https://github.com/hirobuilds7/lp-coffee-sample',
+    imagePath: '/images/lp-coffee-sample.png',
+    gradient: 'from-amber-600 to-stone-800',
+  },
+  {
+    title: 'サービス紹介LP（Excel・スプシ自動化）',
+    description:
+      '自身のExcel・スプレッドシート自動化サービスの紹介LP。素のHTML/CSS/JavaScriptで、レスポンシブ・スクロール連動アニメーション・FAQ構造化データ（JSON-LD）・表示速度チューニングまで実装しています。Lighthouse計測でSEO・アクセシビリティ・ベストプラクティスすべて100点。',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
+    features: ['レスポンシブ対応', 'スクロール出現アニメ', 'FAQ構造化データ(JSON-LD)', 'WCAG AAコントラスト', 'SEO/A11y/BP 100点(Lighthouse)'],
+    demoUrl: 'https://lp-excel-automation.vercel.app',
+    githubUrl: 'https://github.com/hirobuilds7/lp-excel-automation',
+    imagePath: '/images/lp-excel-automation.png',
+    gradient: 'from-sky-400 to-blue-600',
+  },
+  {
     title: 'kintone粗利管理アプリ（町工場向け構築記録）',
     description:
       '町工場向けに、案件別の粗利がリアルタイムで見えるkintoneアプリを構築。現場が日報を入れるだけで、事務所側では案件を開いた瞬間に原価合計・粗利・粗利率がカードで自動集計されます。粗利マイナスは赤で強調され、追加工が入って赤字になった案件を月末Excel集計より1ヶ月早く気づけます。kintone開発者ライセンスの規約上そのままの公開はできないため、スクショと構築記録で中身を全部見せる形にしました。',

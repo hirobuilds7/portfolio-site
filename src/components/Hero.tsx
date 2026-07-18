@@ -20,7 +20,7 @@ export default function Hero() {
             <span className="text-white font-semibold">AIでWebアプリを作る側</span>へ。
           </p>
           <p className="text-slate-400 mb-10 text-base leading-relaxed max-w-2xl">
-            売上集計＋AI月次レポート・工程管理・家計簿など6本を公開中。すべてURLを開けば、その場で触って確かめられます。
+            売上集計＋AI月次レポート・工程管理・LP制作サンプルなど8本を公開中。すべてURLを開けば、その場で触って確かめられます。
             やり取りはテキストで完結し、決定事項がすべて文字で残ります。
           </p>
           <div className="flex flex-wrap gap-4 mb-12">
